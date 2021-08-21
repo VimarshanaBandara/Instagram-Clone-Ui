@@ -46,6 +46,12 @@ flutter:
   assets:
      - assets/images/messanger.png
      - assets/images/reel.png
+     - assets/images/miller.jpg
+     - assets/images/s1.jpg
+     - assets/images/s2.jpg
+     - assets/images/s3.jpg
+     - assets/images/s4.jpg
+     - assets/images/pant.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

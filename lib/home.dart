@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/widgets/bottomBar-widget.dart';
+import 'package:instagram_clone/widgets/post_widget.dart';
 import 'package:instagram_clone/widgets/story.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -32,7 +33,15 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar:BottomBarWidget(),
 
-      body:StoryWidget(),
+      body:Column(
+        children: [
+          StoryWidget(),
+          Divider(color: Colors.grey,),
+          Expanded(
+            child: PostWidget(),
+          )
+        ],
+      )
     );
   }
 }
